@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Minification Guide</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .code-block {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .benefits {
+            background: #e8f4f8;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Minification Guide</h1>
+
+        <nav>
+            <ul>
+                <li><a href="https://iminify.pages.dev/">iminify free</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>What is HTML Minification?</h2>
+            <p>HTML minification is the process of reducing the size of HTML files by removing unnecessary characters without changing the functionality of the code. This includes removing comments, white spaces, and optimizing the markup structure.</p>
+        </section>
+
+        <section>
+            <h2>Before and After Example</h2>
+            <div class="comparison">
+                <div>
+                    <h3>Original HTML</h3>
+                    <div class="code-block">
+                        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+            &lt;!-- Navigation menu --&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+                <div>
+                    <h3>Minified HTML</h3>
+                    <div class="code-block">
+                        <pre>
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div class="container"&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;nav&gt;&lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Benefits of Minification</h2>
+            <div class="benefits">
+                <ul>
+                    <li>Reduced file size and faster loading times</li>
+                    <li>Lower bandwidth usage</li>
+                    <li>Improved website performance</li>
+                    <li>Better user experience</li>
+                    <li>Lower hosting costs</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Common Minification Techniques</h2>
+            <ul>
+                <li>Remove whitespace, line breaks, and indentation</li>
+                <li>Remove HTML comments</li>
+                <li>Remove unnecessary quotes from attributes</li>
+                <li>Remove default attributes</li>
+                <li>Shorten color values</li>
+                <li>Remove empty attributes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Popular Minification Tools</h2>
+            <ul>
+                <li>HTMLMinifier</li>
+                <li>Grunt-contrib-htmlmin</li>
+                <li>Gulp-htmlmin</li>
+                <li>webpack with html-minimizer-webpack-plugin</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
